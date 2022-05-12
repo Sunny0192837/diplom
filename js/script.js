@@ -53,6 +53,7 @@ parent.window.onload = function () {
    }
 
    hideGramContent();
+   showGramContent(0);
 
    console.log(gramBtnsParent);
 
@@ -67,7 +68,4 @@ parent.window.onload = function () {
          });
       }
    });
-
-
-
 };

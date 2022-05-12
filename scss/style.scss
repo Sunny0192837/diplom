@@ -102,7 +102,7 @@ $contBackground: rgba(215, 115, 135, 0.113);
 }
 
 body {
-   font-family: ibm plex sans, sans-serif;
+   font-family: 'Roboto', sans-serif;
    letter-spacing: 0.05rem;
 
    .container {
@@ -278,6 +278,30 @@ body {
             }
          }
 
+         .scndTab {
+            animation: fadeUp .5s ease;
+
+            .recs__container {
+               padding-top: 50px;
+               padding-bottom: 50px;
+               font-family: 'IBM Plex Sans', sans-serif;
+               font-size: 18px;
+               line-height: 25px;
+
+               h1 {
+                  font-size: 36px;
+                  font-weight: 700;
+                  margin-bottom: 40px;
+               }
+
+               h2 {
+                  margin: 40px 0 15px;
+                  font-size: 18px;
+                  font-weight: 700;
+               }
+            }
+         }
+
          .thrdTab {
 
             animation: fadeIn .5s ease;
@@ -287,8 +311,12 @@ body {
                   padding-top: 50px;
                   padding-bottom: 50px;
                   font-family: 'IBM Plex Sans', sans-serif;
-                  font-size: 16px;
+                  font-size: 18px;
                   line-height: 25px;
+
+                  .article {
+                     animation: fadeIn .5s ease;
+                  }
 
                   blockquote {
                      border-left: 1px solid rgb(126, 126, 126);

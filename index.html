@@ -33,7 +33,7 @@
 
    <div class="maincontent__wrapper">
       <div class="tabs__container">
-         <div class="tabs__content  frstTab">
+         <div class="tabs__content frstTab">
             <section class="catchPhraseBlock">
                <div class="container">
                   <h1 class="catchPhrase">Твой личный помощник в изучении английского</h1>
@@ -186,8 +186,14 @@
                </div>
             </section>
          </div>
-         <div class="tabs__content">
-
+         <div class="tabs__content scndTab">
+            <div class="container">
+               <div class="recs__container">
+                  <iframe src="recs.html"
+                     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
+                  </iframe>
+               </div>
+            </div>
          </div>
          <div class="tabs__content thrdTab">
             <div class="container">
@@ -452,7 +458,8 @@
 
                <div class="grammar__container" data-include="grammar.html">
                   <iframe src="grammar.html"
-                     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+                     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
+                  </iframe>
                </div>
             </div>
          </div>

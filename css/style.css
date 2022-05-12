@@ -98,7 +98,7 @@ h6 {
 }
 
 body {
-  font-family: ibm plex sans, sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.05rem;
 }
 body .container {
@@ -256,6 +256,27 @@ body .maincontent__wrapper .tabs__container .frstTab .reasons .reasonsCont .reas
   font-size: 24px;
   line-height: 144%;
 }
+body .maincontent__wrapper .tabs__container .scndTab {
+  -webkit-animation: fadeUp 0.5s ease;
+          animation: fadeUp 0.5s ease;
+}
+body .maincontent__wrapper .tabs__container .scndTab .recs__container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+body .maincontent__wrapper .tabs__container .scndTab .recs__container h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+body .maincontent__wrapper .tabs__container .scndTab .recs__container h2 {
+  margin: 40px 0 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
 body .maincontent__wrapper .tabs__container .thrdTab {
   -webkit-animation: fadeIn 0.5s ease;
           animation: fadeIn 0.5s ease;
@@ -264,8 +285,12 @@ body .maincontent__wrapper .tabs__container .thrdTab .container .grammar__contai
   padding-top: 50px;
   padding-bottom: 50px;
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 25px;
+}
+body .maincontent__wrapper .tabs__container .thrdTab .container .grammar__container .article {
+  -webkit-animation: fadeIn 0.5s ease;
+          animation: fadeIn 0.5s ease;
 }
 body .maincontent__wrapper .tabs__container .thrdTab .container .grammar__container blockquote {
   border-left: 1px solid #7e7e7e;
