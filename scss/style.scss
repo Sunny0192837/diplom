@@ -318,12 +318,19 @@ body {
                      animation: fadeIn .5s ease;
                   }
 
+                  th,
+                  td {
+                     padding: 5px;
+                     border: 1px solid rgb(151, 151, 151);
+                  }
+
                   blockquote {
                      border-left: 1px solid rgb(126, 126, 126);
                      padding-left: 10px;
                   }
 
                   h1 {
+                     line-height: 125%;
                      font-size: 36px;
                      font-weight: 700;
                      margin-bottom: 40px;
@@ -332,6 +339,17 @@ body {
                   h2 {
                      margin: 40px 0 15px;
                      font-size: 18px;
+                     font-weight: 700;
+                  }
+
+                  img {
+                     padding: 0 10px 0 10px;
+                     float: right;
+                  }
+
+
+
+                  h3 {
                      font-weight: 700;
                   }
 
@@ -493,7 +511,7 @@ body {
 
 
                   .resource__title {
-                     font-size: 54px;
+                     font-size: 40px;
                      color: $mainTextColor;
                      padding: 20px 0 30px 0;
 

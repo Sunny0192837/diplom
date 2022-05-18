@@ -292,11 +292,17 @@ body .maincontent__wrapper .tabs__container .thrdTab .container .grammar__contai
   -webkit-animation: fadeIn 0.5s ease;
           animation: fadeIn 0.5s ease;
 }
+body .maincontent__wrapper .tabs__container .thrdTab .container .grammar__container th,
+body .maincontent__wrapper .tabs__container .thrdTab .container .grammar__container td {
+  padding: 5px;
+  border: 1px solid #979797;
+}
 body .maincontent__wrapper .tabs__container .thrdTab .container .grammar__container blockquote {
   border-left: 1px solid #7e7e7e;
   padding-left: 10px;
 }
 body .maincontent__wrapper .tabs__container .thrdTab .container .grammar__container h1 {
+  line-height: 125%;
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 40px;
@@ -304,6 +310,13 @@ body .maincontent__wrapper .tabs__container .thrdTab .container .grammar__contai
 body .maincontent__wrapper .tabs__container .thrdTab .container .grammar__container h2 {
   margin: 40px 0 15px;
   font-size: 18px;
+  font-weight: 700;
+}
+body .maincontent__wrapper .tabs__container .thrdTab .container .grammar__container img {
+  padding: 0 10px 0 10px;
+  float: right;
+}
+body .maincontent__wrapper .tabs__container .thrdTab .container .grammar__container h3 {
   font-weight: 700;
 }
 body .maincontent__wrapper .tabs__container .thrdTab .container .grammar__container p {
@@ -435,7 +448,7 @@ body .maincontent__wrapper .tabs__container .fourthTab .resources .resource {
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 }
 body .maincontent__wrapper .tabs__container .fourthTab .resources .resource .resource__title {
-  font-size: 54px;
+  font-size: 40px;
   color: #c53d35;
   padding: 20px 0 30px 0;
 }
