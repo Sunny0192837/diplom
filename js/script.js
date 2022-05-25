@@ -28,6 +28,10 @@ parent.window.onload = function () {
                hideTabContent();
                showTabContent(i);
                window.scrollTo(0, 0);
+               if (i == 2) {
+                  hideGramContent();
+                  showGramContent(0);
+               }
             }
          });
       }
@@ -37,10 +41,10 @@ parent.window.onload = function () {
    showTabContent(0);
 
    const gramBtns = document.querySelectorAll('.grammarTrigger'),
-      gramCont = document.querySelectorAll('div.article'),
       gramBtnsParent = document.querySelector('.mainMenu');
 
    function hideGramContent() {
+      const gramCont = document.querySelectorAll('div.article');
       gramCont.forEach((item) => {
          item.classList.remove('visible');
          item.classList.add('hidden');
@@ -48,14 +52,10 @@ parent.window.onload = function () {
    }
 
    function showGramContent(i) {
+      const gramCont = document.querySelectorAll('div.article');
       gramCont[i].classList.remove('hidden');
       gramCont[i].classList.add('visible');
    }
-
-   hideGramContent();
-   showGramContent(0);
-
-   console.log(gramBtnsParent);
 
    gramBtnsParent.addEventListener('click', (e) => {
       if (e.target.classList.contains('grammarTrigger')) {
@@ -68,4 +68,7 @@ parent.window.onload = function () {
          });
       }
    });
+
+
+
 };

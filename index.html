@@ -13,6 +13,7 @@
       rel="stylesheet">
    <link rel="icon" href="img/logo.png" type="image/png">
    <title>English_itself</title>
+   <link rel="import" href="grammar.html" />
 </head>
 
 <body>
@@ -188,10 +189,8 @@
          </div>
          <div class="tabs__content scndTab hidden">
             <div class="container">
-               <div class="recs__container">
-                  <iframe src="recs.html"
-                     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
-                  </iframe>
+               <div class="recs__container" id="includedContent1">
+
                </div>
             </div>
          </div>
@@ -456,10 +455,9 @@
                   </ul>
                </div>
 
-               <div class="grammar__container" data-include="grammar.html">
-                  <iframe src="grammar.html"
-                     onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()">
-                  </iframe>
+               <div class="grammar__container" id="includedContent">
+
+
                </div>
             </div>
          </div>
@@ -581,6 +579,8 @@
       </footer>
    </div>
    <script src="js/script.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="js/jquery.js"></script>
 </body>
 
 </html>
