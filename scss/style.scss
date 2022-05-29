@@ -1,92 +1,4 @@
-/*Обнуление*/
-* {
-   padding: 0;
-   margin: 0;
-   border: 0;
-}
-
-*,
-*:before,
-*:after {
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   box-sizing: border-box;
-}
-
-:focus,
-:active {
-   outline: none;
-}
-
-a:focus,
-a:active {
-   outline: none;
-}
-
-nav,
-footer,
-header,
-aside {
-   display: block;
-}
-
-html,
-body {
-   width: 100%;
-   font-size: 100%;
-   line-height: 1;
-   font-size: 14px;
-   -ms-text-size-adjust: 100%;
-   -moz-text-size-adjust: 100%;
-   -webkit-text-size-adjust: 100%;
-}
-
-input,
-button,
-textarea {
-   font-family: inherit;
-}
-
-input::-ms-clear {
-   display: none;
-}
-
-button {
-   cursor: pointer;
-}
-
-button::-moz-focus-inner {
-   padding: 0;
-   border: 0;
-}
-
-a,
-a:visited {
-   text-decoration: none;
-}
-
-a:hover {
-   text-decoration: none;
-}
-
-ul li {
-   list-style: none;
-}
-
-img {
-   vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-   font-size: inherit;
-   font-weight: inherit;
-}
-
+@import 'nullstyle';
 /*-------Переменные---------*/
 
 $mainTextColor: #c53d35;
@@ -104,6 +16,47 @@ $contBackground: rgba(215, 115, 135, 0.113);
 body {
    font-family: 'Roboto', sans-serif;
    letter-spacing: 0.05rem;
+
+   #button {
+      display: inline-block;
+      background-color: #ea7474;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      border-radius: 14px;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      transition: all .5s;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 1000;
+   }
+
+   #button::after {
+      content: "\f077";
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 2em;
+      line-height: 50px;
+      color: #fff;
+   }
+
+   #button:hover {
+      cursor: pointer;
+      background-color: $mainTextColor;
+      border-radius: 100%;
+   }
+
+   #button:active {
+      background-color: #555;
+   }
+
+   #button.show {
+      opacity: 1;
+      visibility: visible;
+   }
 
    .container {
       margin: 0 auto;

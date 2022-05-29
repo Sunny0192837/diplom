@@ -6,32 +6,25 @@
   border: 0;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-:focus,
-:active {
+:focus, :active {
   outline: none;
 }
 
-a:focus,
-a:active {
+a:focus, a:active {
   outline: none;
 }
 
-nav,
-footer,
-header,
-aside {
+nav, footer, header, aside {
   display: block;
 }
 
-html,
-body {
+html, body {
+  height: 100%;
   width: 100%;
   font-size: 100%;
   line-height: 1;
@@ -41,9 +34,7 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-input,
-button,
-textarea {
+input, button, textarea {
   font-family: inherit;
 }
 
@@ -60,8 +51,7 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a,
-a:visited {
+a, a:visited {
   text-decoration: none;
 }
 
@@ -77,16 +67,12 @@ img {
   vertical-align: top;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: inherit;
 }
 
+/*--------------------*/
 /*-------Переменные---------*/
 /*--------------------*/
 .visible {
@@ -100,6 +86,43 @@ h6 {
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.05rem;
+}
+body #button {
+  display: inline-block;
+  background-color: #ea7474;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 14px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+body #button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+body #button:hover {
+  cursor: pointer;
+  background-color: #c53d35;
+  border-radius: 100%;
+}
+body #button:active {
+  background-color: #555;
+}
+body #button.show {
+  opacity: 1;
+  visibility: visible;
 }
 body .container {
   margin: 0 auto;
@@ -295,10 +318,10 @@ body .maincontent__wrapper .tabs__container .thrdTab .container .grammar__contai
 body .maincontent__wrapper .tabs__container .thrdTab .container .grammar__container th,
 body .maincontent__wrapper .tabs__container .thrdTab .container .grammar__container td {
   padding: 5px;
-  border: 1px solid #979797;
+  border: 1px solid rgb(151, 151, 151);
 }
 body .maincontent__wrapper .tabs__container .thrdTab .container .grammar__container blockquote {
-  border-left: 1px solid #7e7e7e;
+  border-left: 1px solid rgb(126, 126, 126);
   padding-left: 10px;
 }
 body .maincontent__wrapper .tabs__container .thrdTab .container .grammar__container h1 {
