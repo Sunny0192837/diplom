@@ -2,7 +2,23 @@ parent.window.onload = function () {
 
    const tabBtns = document.querySelectorAll('.header__link'),
       tabsCont = document.querySelectorAll('.tabs__content'),
-      tabsParent = document.querySelector('.header__flex');
+      tabsParent = document.querySelector('.header__flex'),
+      gramBtns = document.querySelectorAll('.grammarTrigger'),
+      gramBtnsParent = document.querySelector('.mainMenu');
+
+   function hideGramContent() {
+      const gramCont = document.querySelectorAll('div.article');
+      gramCont.forEach((item) => {
+         item.classList.remove('visible');
+         item.classList.add('hidden');
+      });
+   }
+
+   function showGramContent(i) {
+      const gramCont = document.querySelectorAll('div.article');
+      gramCont[i].classList.remove('hidden');
+      gramCont[i].classList.add('visible');
+   }
 
    function hideTabContent() {
       tabsCont.forEach(item => {
@@ -40,23 +56,6 @@ parent.window.onload = function () {
    hideTabContent();
    showTabContent(0);
 
-   const gramBtns = document.querySelectorAll('.grammarTrigger'),
-      gramBtnsParent = document.querySelector('.mainMenu');
-
-   function hideGramContent() {
-      const gramCont = document.querySelectorAll('div.article');
-      gramCont.forEach((item) => {
-         item.classList.remove('visible');
-         item.classList.add('hidden');
-      });
-   }
-
-   function showGramContent(i) {
-      const gramCont = document.querySelectorAll('div.article');
-      gramCont[i].classList.remove('hidden');
-      gramCont[i].classList.add('visible');
-   }
-
    gramBtnsParent.addEventListener('click', (e) => {
       if (e.target.classList.contains('grammarTrigger')) {
          gramBtns.forEach((item, i) => {
@@ -68,7 +67,4 @@ parent.window.onload = function () {
          });
       }
    });
-
-
-
 };
