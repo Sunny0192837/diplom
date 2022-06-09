@@ -230,7 +230,7 @@ body .maincontent__wrapper .tabs__container .frstTab .catchPhraseBlock .catchPhr
 }
 body .maincontent__wrapper .tabs__container .frstTab .catchPhraseBlock .catchPhraseImage {
   position: absolute;
-  right: 160px;
+  right: 100px;
   bottom: 0;
   max-width: 610px;
 }
@@ -612,5 +612,10 @@ body .maincontent__wrapper .tabs__container .fourthTab .resources .resource .res
     -webkit-transform-origin: right;
             transform-origin: right;
     opacity: 1;
+  }
+}
+@media (max-width: 1400px) {
+  .catchPhraseImage {
+    display: none;
   }
 }

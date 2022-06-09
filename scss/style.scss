@@ -165,7 +165,7 @@ body {
 
                .catchPhraseImage {
                   position: absolute;
-                  right: 160px;
+                  right: 100px;
                   bottom: 0;
                   max-width: 610px;
                }
@@ -544,5 +544,11 @@ body {
       transform: rotateY(0);
       transform-origin: right;
       opacity: 1
+   }
+}
+
+@media (max-width:1400px) {
+   .catchPhraseImage {
+      display: none;
    }
 }
