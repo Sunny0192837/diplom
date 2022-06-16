@@ -244,12 +244,21 @@ body {
                   font-size: 36px;
                   font-weight: 700;
                   margin-bottom: 40px;
+                  line-height: 125%;
                }
 
                h2 {
                   margin: 40px 0 15px;
                   font-size: 18px;
                   font-weight: 700;
+               }
+
+               p {
+                  margin: 15px 0;
+               }
+
+               .recomendation:not(:first-child) {
+                  margin-top: 40px;
                }
             }
          }

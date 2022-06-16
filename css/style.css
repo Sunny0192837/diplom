@@ -294,11 +294,18 @@ body .maincontent__wrapper .tabs__container .scndTab .recs__container h1 {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 40px;
+  line-height: 125%;
 }
 body .maincontent__wrapper .tabs__container .scndTab .recs__container h2 {
   margin: 40px 0 15px;
   font-size: 18px;
   font-weight: 700;
+}
+body .maincontent__wrapper .tabs__container .scndTab .recs__container p {
+  margin: 15px 0;
+}
+body .maincontent__wrapper .tabs__container .scndTab .recs__container .recomendation:not(:first-child) {
+  margin-top: 40px;
 }
 body .maincontent__wrapper .tabs__container .thrdTab {
   -webkit-animation: fadeIn 0.5s ease;
